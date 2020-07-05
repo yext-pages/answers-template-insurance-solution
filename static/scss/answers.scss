@@ -1,0 +1,49 @@
+.Answers
+{
+  // insert Answers scss here e.g.
+  //&-nav {
+  //  padding-top: 32px;
+  //}
+
+  .HitchhikerFaqAccordion
+  {
+    &-details
+    {
+      a
+      {
+        color: var(--yxt-color-brand-primary);
+        text-decoration: underline;
+
+        &:hover
+        {
+          text-decoration: none;
+        }
+      }
+    }
+    
+    &-footnote
+    {
+      margin-top: 8px;
+      font-style: italic;
+    }
+  }
+
+  .HitchhikerFaqAccordion-details 
+  {
+    p
+    {
+      margin-bottom: .5rem;
+    }
+  }
+
+  .HitchhikerFaqAccordion-details 
+  {
+      ul, ol
+      {
+        margin-bottom: .5rem;
+        margin-left: 2rem;
+        list-style-position: outside;
+      }
+  }
+  
+}
