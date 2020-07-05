@@ -1,17 +1,17 @@
 {
-  "verticalKey": "who-covid", // The vertical key from your search configuration
-  "pageTitle": "WHO COVID-19 FAQ Search", // The contents of the title tag and meta open graph tag for title
+  "verticalKey": "agents", // The vertical key from your search configuration
+  "pageTitle": "Agent Search", // !!!REPLACE THIS VALUE!!! The contents of the title tag and meta open graph tag for title
   // "metaDescription": "", // The meta tag for open graph description
   // "canonicalUrl": "", // The link tag for canonical URL as well as the meta tag for open graph url
   // "keywords": "", // The meta tag for keywords
   "pageSettings": {
     /**
-     "search": {
-       "verticalKey": "<REPLACE ME>", // The vertical key from your search configuration
-       "defaultInitialSearch": "" // Enter a default search term
-     }
+    "search": {
+      "verticalKey": "agents", // The vertical key from your search configuration
+      "defaultInitialSearch": "" // Enter a default search term
+    }
     **/
-  },  
+  },
   "componentSettings": {
     /**
     "QASubmission": {
@@ -40,20 +40,32 @@
       }
     },
     "Pagination": {
-       "noResults": {
-        "visible": true 
+      "noResults": {
+        "visible": true
       }
     }
   },
   // Configuration used to define the look and feel of the vertical, both on this page and, by default,
   // on the universal page.
   "verticalsToConfig": {
-    "who-covid": { // The vertical key from your search configuration
-      "label": "WHO FAQs", // The name of the vertical in the section header and the navigation bar
+    "agents": { // The vertical key from your search configuration
+      // "label": "", // The name of the vertical in the section header and the navigation bar
       // "verticalLimit": 15, // The result count limit for vertical search
       // "universalLimit": 5, // The result count limit for universal search
-      "cardType": "whocovidcard", // The name of the card to use - e.g. accordion, location, customcard 
-      "icon": "info" // The icon to use on the card for this vertical
+      "cardType": "agent-override", // The name of the card to use - e.g. accordion, location, customcard 
+      "icon": "person", // The icon to use on the card for this vertical
+      "mapConfig": {
+        "mapProvider": "MapBox", // The name of the provider (e.g. Mapbox, Google)
+        "pin": {
+          "backgroundColor": "", // Enter a hex value or color for the pin background
+          "labelColor": "", // Enter a hex value or color for the label color
+          "strokeColor": "" // Enter a hex value or color for the stroke color
+        },
+        "noResults": {
+          "displayAllResults": true, // Set to FALSE to hide results on the map when a search returns no results
+          "visible": true // Set to FALSE to hide the map when a search returns no results
+        }
+      }
     }
   }
 }
