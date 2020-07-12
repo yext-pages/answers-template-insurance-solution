@@ -1,6 +1,6 @@
 {
   "name": "answers-hitchhiker-theme",
-  "version": "1.0.0",
+  "version": "1.4.1",
   "description": "Toolchain for use with the HH Theme",
   "main": "Gruntfile.js",
   "scripts": {
@@ -10,8 +10,8 @@
   "license": "BSD-3-Clause",
   "devDependencies": {
     "@babel/core": "^7.9.6",
-    "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/runtime-corejs3": "^7.9.6",
     "@yext/cta-formatter": "^1.0.0",
     "babel-loader": "^8.1.0",
