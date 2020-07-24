@@ -21,7 +21,7 @@ class cdccovidcardCardComponent extends BaseCard['cdccovidcard'] {
     return {
       title: profile.name, // The header text of the card
       // subtitle: '', // The sub-header text of the card
-      details: profile.answer ? ANSWERS.formatRichText(profile.answer) : null, // The text in the body of the card
+      details: profile.answer ? ANSWERS.formatRichText(profile.answer, 'VIEW_WEBSITE','_top') : null, // The text in the body of the card
       footnote: `Last updated ${profile.c_contentLastUpdatedDate} from <a href="https://www.cdc.gov/" target=”_blank”>The Centers for Disease Control and Prevention</a>`,
       // If the card's details are longer than a certain character count, you can truncate the
       // text. A toggle will be supplied that can show or hide the truncated text.
