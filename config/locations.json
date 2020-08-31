@@ -5,12 +5,10 @@
   // "canonicalUrl": "", // The link tag for canonical URL as well as the meta tag for open graph url
   // "keywords": "", // The meta tag for keywords
   "pageSettings": {
-    /**
     "search": {
       "verticalKey": "locations", // The vertical key from your search configuration
       "defaultInitialSearch": "" // Enter a default search term
     }
-    **/
   },
   "componentSettings": {
     /**
@@ -29,7 +27,8 @@
     },
     **/
     "SearchBar": {
-      "placeholderText": "Search" // The placeholder text in the answers search bar
+      "placeholderText": "Search", // The placeholder text in the answers search bar
+      "allowEmptySearch": true
     },
     "VerticalResults": {
       "noResults": {
@@ -50,6 +49,7 @@
   "verticalsToConfig": {
     "locations": { // The vertical key from your search configuration
       // "label": "", // The name of the vertical in the section header and the navigation bar
+      // "sectionTitle": "", // If you only want to update the section header and not the navigation, use this instead of label
       // "verticalLimit": 15, // The result count limit for vertical search
       // "universalLimit": 5, // The result count limit for universal search
       "cardType": "location-standard", // The name of the card to use - e.g. accordion, location, customcard 
@@ -65,7 +65,8 @@
           "displayAllResults": true, // Set to FALSE to hide results on the map when a search returns no results
           "visible": true // Set to FALSE to hide the map when a search returns no results
         }
-      }
+      },
+      "universalSectionTemplate": "standard" // choose a. template for universal search, defaults to standard
     }
   }
 }

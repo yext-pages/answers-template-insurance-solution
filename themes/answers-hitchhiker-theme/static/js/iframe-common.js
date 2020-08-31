@@ -77,12 +77,19 @@ export function generateIFrame(domain, queryParam, urlParam) {
   // For dynamic iFrame resizing
   iFrameResize({
     checkOrigin: false,
-    onMessage: function(data) {
+    onMessage: function(messageData) {
+      const message = JSON.parse(messageData.message);
+      const params = message.params;
+      const replaceHistory = message.replaceHistory;
       iframe.iFrameResizer.resize();
       var currLocation = window.location.href.split('?')[0];
-      var newLocation = currLocation + '?' + data.message;
+      var newLocation = currLocation + '?' + params;
       if (window.location.href !== newLocation) {
-        history.pushState({query: data.message}, window.document.title, newLocation);
+        if (replaceHistory) {
+          history.replaceState({query: params}, window.document.title, newLocation);
+        } else {
+          history.pushState({query: params}, window.document.title, newLocation);
+        }
       }
     }
   }, '#answers-frame');
