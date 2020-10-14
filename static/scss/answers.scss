@@ -4,55 +4,6 @@
   //&-nav {
   //  padding-top: 32px;
   //}
-
-  .HitchhikerFaqAccordion
-  {
-    &-details
-    {
-      a
-      {
-        color: var(--yxt-color-brand-primary);
-        text-decoration: underline;
-
-        &:hover
-        {
-          text-decoration: none;
-        }
-      }
-    }
-    
-    &-footnote
-    {
-      margin-top: 8px;
-      font-style: italic;
-    }
-  }
-
-  .HitchhikerFaqAccordion-details 
-  {
-    p
-    {
-      margin-bottom: .5rem;
-    }
-  }
-
-  .HitchhikerFaqAccordion-details 
-  {
-      ul, ol
-      {
-        list-style-position: outside;
-        margin-left: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-      }
-  }
-
-  .HitchhikerFaqAccordion-details li 
-    {
-    margin-bottom: 0;
-    }
-
     .yxt-FilterOptions-optionLabel:before
   {
     background-color: white;
