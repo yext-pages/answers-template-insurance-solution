@@ -26,8 +26,8 @@ class agent_overrideCardComponent extends BaseCard['agent-override'] {
       phoneEventOptions: this.addDefaultEventOptions(), // The analytics event options for phone clicks
       distance: Formatter.toMiles(profile), // Distance from the user’s or inputted location
       // details: profile.description, // The description for the card, displays below the address and phone
-      image: Formatter.image(profile.c_professionalHeadshot).url, // The URL of the image to display on the card
-      altText: Formatter.image(profile.c_professionalHeadshot).alternateText,  // The alternate text for the image
+      image: Formatter.image(profile.headshot).url, // The URL of the image to display on the card
+      altText: Formatter.image(profile.headshot).alternateText,  // The alternate text for the image
       showOrdinal: true, // If the ordinal should be displayed on the card
       CTA1: { // The primary call to action for the card
         iconName: 'phone', // The icon to use for the CTA
