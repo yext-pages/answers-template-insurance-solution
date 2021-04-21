@@ -56,7 +56,7 @@
   // on the universal page.
   "verticalsToConfig": {
     "jobs": { // The vertical key from your search configuration
-      // "label": "", // The name of the vertical in the section header and the navigation bar
+      "label": "Jobs", // The name of the vertical in the section header and the navigation bar
       // "sectionTitle": "", // If you only want to update the section header and not the navigation, use this instead of label
       // "verticalLimit": 15, // The result count limit for vertical search
       // "universalLimit": 5, // The result count limit for universal search
