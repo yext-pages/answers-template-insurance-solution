@@ -95,6 +95,7 @@
   &-detailsText
   {
     @include rich_text_formatting;
+    color: var(--yxt-color-text-primary);
   }
 
   &-ctasWrapper
@@ -114,5 +115,13 @@
   .js-hidden
   {
     display: none;
+  }
+
+  .HitchhikerCard
+  {
+    &-feedbackContent
+    {
+      margin-top: calc(var(--yxt-base-spacing) / 2);
+    }
   }
 }
