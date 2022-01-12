@@ -1,5 +1,5 @@
 {
-  "sdkVersion": "1.10", // The version of the Answers SDK to use
+  "sdkVersion": "1.12", // The version of the Answers SDK to use
   // "environment": "production", // The environment to run on for this Answers Experience. (i.e. 'production' or 'sandbox')
   // "token": "<REPLACE ME>", // The auth token to access Answers experience.
   // "initializeManually": true, // If true, the experience must be started by calling AnswersExperience.init() or AnswersExperienceFrame.init() for iframe integrations.

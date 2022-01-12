@@ -23,8 +23,13 @@
         {{> templates/vertical-map/markup/navigation }}
       </div>
     </div>
+    <!-- Uncomment the following if this page should be searched from the Answers Overlay panel. 
+    The overlay partial should only be added to ONE page of your site, e.g. if you uncomment the 
+    partial for this page, you should not use it on any other page.  -->
+    {{!-- {{> layouts/overlay-suggestions }} --}}
     <div class="Answers-resultsWrapper js-answersResultsWrapper">
       <div class="Answers-resultsColumn js-answersResultsColumn">
+        {{> templates/vertical-map/markup/spellcheck }}
         <div class="Answers-resultsHeader">
           {{> templates/vertical-map/markup/verticalresultscount }}
           {{> templates/vertical-map/markup/appliedfilters }}
@@ -38,7 +43,6 @@
           {{!-- {{> templates/vertical-map/markup/filterbox }} --}}
         {{!-- </div> --}}
         <div class="Answers-results js-answersResults">
-          {{> templates/vertical-map/markup/spellcheck }}
           {{> templates/vertical-map/markup/verticalresults }}
           {{> templates/vertical-map/markup/pagination }}
           {{!-- {{> templates/vertical-map/markup/qasubmission }} --}}
